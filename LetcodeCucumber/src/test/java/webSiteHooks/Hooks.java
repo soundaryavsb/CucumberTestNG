@@ -17,6 +17,7 @@ public class Hooks extends DriverInstance{
 		System.setProperty("webdriver.chrome.driver", "C:\\WebDriver\\chrome Driver\\chromedriver-win32\\chromedriver.exe");
 		driver=new ChromeDriver();  
 		driver.manage().window().maximize();
+		
 	}
 	@After
 	public void AfterScenario(Scenario scenario)
