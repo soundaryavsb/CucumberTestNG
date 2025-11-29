@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-11-29T09:19:30 IST" name="Default suite" finished-at="2025-11-29T09:19:33 IST" duration-ms="3126">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.WebSiteTitleRunner@3af9c5b7]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2025-11-29T09:19:30 IST" name="Default test" finished-at="2025-11-29T09:19:33 IST" duration-ms="3126">
+      <class name="testRunner.WebSiteTitleRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:testRunner.WebSiteTitleRunner@3af9c5b7]" started-at="2025-11-29T09:19:30 IST" name="setUpClass" finished-at="2025-11-29T09:19:30 IST" duration-ms="145" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@4248ed58]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.WebSiteTitleRunner@3af9c5b7]" started-at="2025-11-29T09:19:30 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-11-29T09:19:32 IST" duration-ms="1704" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Google Title Check"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Matching the website Title"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.WebSiteTitleRunner@3af9c5b7]" started-at="2025-11-29T09:19:32 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-11-29T09:19:33 IST" duration-ms="1245" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Bing Title Check"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Matching the website Title"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testRunner.WebSiteTitleRunner@3af9c5b7]" started-at="2025-11-29T09:19:33 IST" name="tearDownClass" finished-at="2025-11-29T09:19:33 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- testRunner.WebSiteTitleRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

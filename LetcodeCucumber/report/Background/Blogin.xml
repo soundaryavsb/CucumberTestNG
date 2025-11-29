@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="0.156" tests="2" skipped="0" failures="0" errors="0" timestamp="2025-11-27T16:44:50.224091Z">
+<testcase classname="Bookcart application Demo" name="Login should be success" time="0.004">
+<system-out><![CDATA[
+Given pre-requisite User should navigate to the application.................passed
+And pre-requisite User clicks on the Login link.............................passed
+Given User Enter the username as "ortoniB"..................................passed
+And User Enter the password as "pass1234B"..................................passed
+When User click the login button............................................passed
+Then Login should be success................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Bookcart application Demo" name="Login should fail" time="0.002">
+<system-out><![CDATA[
+Given pre-requisite User should navigate to the application.................passed
+And pre-requisite User clicks on the Login link.............................passed
+Given User Enter the username as "gemniB"...................................passed
+And User Enter the password as "passgem12B".................................passed
+When User click the login button............................................passed
+Then Login should be failed.................................................passed
+]]></system-out>
+</testcase>
+</testsuite>
