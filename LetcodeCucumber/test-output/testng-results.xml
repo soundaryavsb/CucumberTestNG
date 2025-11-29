@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-11-29T09:59:21 IST" name="Default suite" finished-at="2025-11-29T09:59:24 IST" duration-ms="2479">
+  <suite started-at="2025-11-29T12:40:25 IST" name="Default suite" finished-at="2025-11-29T12:40:30 IST" duration-ms="4735">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.WebSiteTitleRunner@3af9c5b7]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2025-11-29T09:59:21 IST" name="Default test" finished-at="2025-11-29T09:59:24 IST" duration-ms="2479">
+    <test started-at="2025-11-29T12:40:25 IST" name="Default test" finished-at="2025-11-29T12:40:30 IST" duration-ms="4735">
       <class name="testRunner.WebSiteTitleRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:testRunner.WebSiteTitleRunner@3af9c5b7]" started-at="2025-11-29T09:59:21 IST" name="setUpClass" finished-at="2025-11-29T09:59:21 IST" duration-ms="213" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:testRunner.WebSiteTitleRunner@3af9c5b7]" started-at="2025-11-29T12:40:25 IST" name="setUpClass" finished-at="2025-11-29T12:40:26 IST" duration-ms="685" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@1f14f20c]]>
+                <![CDATA[org.testng.TestRunner@7fc7c4a]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.WebSiteTitleRunner@3af9c5b7]" started-at="2025-11-29T09:59:21 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-11-29T09:59:24 IST" duration-ms="2216" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.WebSiteTitleRunner@3af9c5b7]" started-at="2025-11-29T12:40:26 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-11-29T12:40:28 IST" duration-ms="2122" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -37,7 +37,41 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testRunner.WebSiteTitleRunner@3af9c5b7]" started-at="2025-11-29T09:59:24 IST" name="tearDownClass" finished-at="2025-11-29T09:59:24 IST" duration-ms="3" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.WebSiteTitleRunner@3af9c5b7]" started-at="2025-11-29T12:40:28 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-11-29T12:40:30 IST" duration-ms="1779" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Bing Title Check"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Matching the website Title"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:1079)
+at org.testng.Assert.assertEquals(Assert.java:1043)
+at org.testng.Assert.assertEquals(Assert.java:1089)
+at steps.WebSiteTitleCheckSteps.matching_the_bing_title_and_get_the_result(WebSiteTitleCheckSteps.java:55)
+at ✽.Matching the Bing Title and Get the result(file:///C:/Users/D.Soundarya/git/repository/Cucumber/LetcodeCucumber/src/test/java/Feature/WebSiteTitleCheck.feature:17)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testRunner.WebSiteTitleRunner@3af9c5b7]" started-at="2025-11-29T12:40:30 IST" name="tearDownClass" finished-at="2025-11-29T12:40:30 IST" duration-ms="94" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

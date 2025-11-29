@@ -1,6 +1,8 @@
 package steps;
 
+import org.openqa.selenium.OutputType;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 
 import driver.DriverInstance;
 import io.cucumber.java.en.Given;
@@ -50,13 +52,14 @@ public class WebSiteTitleCheckSteps extends DriverInstance{
 	}
 	@Then("Matching the Bing Title and Get the result")
 	public void matching_the_bing_title_and_get_the_result() {
-		if(TitleName.equals("Search - Microsoft Bing Fail"))
-		{
-			System.out.println("Yes, Google title is matched and the title is "+"\'"+TitleName+"\'");
-		}
-		else
-		{
-			System.out.println("No, Google title is not matched and the title is "+"\'"+TitleName+"\'");
-		}
+		Assert.assertEquals(TitleName.equals("Search - Microsoft Bing Fail"), true);
+//		if(TitleName.equals("Search - Microsoft Bing Fail"))
+//		{
+//			System.out.println("Yes, Google title is matched and the title is "+"\'"+TitleName+"\'");
+//		}
+//		else
+//		{
+//			System.out.println("No, Google title is not matched and the title is "+"\'"+TitleName+"\'");
+//		}
 	}
 }
