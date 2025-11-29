@@ -9,19 +9,19 @@
 <dependency>
     <groupId>org.seleniumhq.selenium</groupId>
     <artifactId>selenium-java</artifactId>
-    <version>4.20.0</version>
+    <version>4.34.0</version>
 </dependency>
   <!-- Cucumber Java -->
 <dependency>
     <groupId>io.cucumber</groupId>
     <artifactId>cucumber-java</artifactId>
-    <version>7.14.0</version>
+    <version>7.23.0</version>
 </dependency>
 <!-- OR Cucumber TestNG (if using TestNG) -->
 <dependency>
     <groupId>io.cucumber</groupId>
     <artifactId>cucumber-testng</artifactId>
-    <version>7.14.0</version>
+    <version>7.23.0</version>
     <scope>test</scope>
 </dependency>
   </dependencies>
