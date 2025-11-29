@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="4.085" tests="2" skipped="0" failures="1" errors="0" timestamp="2025-11-29T07:10:26.203655300Z">
-<testcase classname="Matching the website Title" name="Google Title Check" time="2.017">
+<testsuite name="Cucumber" time="4.454" tests="2" skipped="0" failures="1" errors="0" timestamp="2025-11-29T07:58:36.971346700Z">
+<testcase classname="Matching the website Title" name="Google Title Check" time="2.287">
 <system-out><![CDATA[
-Given Launching the browser.................................................passed
 Given Navigate to the Google website........................................passed
 When Get the Google browser Title...........................................passed
 Then Matching the Google Title and Get the result...........................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Matching the website Title" name="Bing Title Check" time="1.776">
+<testcase classname="Matching the website Title" name="Bing Title Check" time="1.895">
 <failure type="java.lang.AssertionError" message="expected [true] but found [false]">
 <![CDATA[java.lang.AssertionError: expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:111)
@@ -18,12 +17,11 @@ Then Matching the Google Title and Get the result...........................pass
 	at org.testng.Assert.assertEquals(Assert.java:1079)
 	at org.testng.Assert.assertEquals(Assert.java:1043)
 	at org.testng.Assert.assertEquals(Assert.java:1089)
-	at steps.WebSiteTitleCheckSteps.matching_the_bing_title_and_get_the_result(WebSiteTitleCheckSteps.java:55)
-	at ✽.Matching the Bing Title and Get the result(file:///C:/Users/D.Soundarya/git/repository/Cucumber/LetcodeCucumber/src/test/java/Feature/WebSiteTitleCheck.feature:17)
+	at steps.WebSiteTitleCheckSteps.matching_the_bing_title_and_get_the_result(WebSiteTitleCheckSteps.java:54)
+	at ✽.Matching the Bing Title and Get the result(file:///C:/Users/D.Soundarya/git/repository/Cucumber/LetcodeCucumber/src/test/java/Feature/WebSiteTitleCheck.feature:14)
 ]]>
 </failure>
 <system-out><![CDATA[
-Given Launching the browser.................................................passed
 Given Navigate to the Bing website..........................................passed
 When Get the Bing browser Title.............................................passed
 Then Matching the Bing Title and Get the result.............................failed
