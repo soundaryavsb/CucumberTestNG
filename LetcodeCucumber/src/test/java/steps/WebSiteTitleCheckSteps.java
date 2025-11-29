@@ -1,6 +1,5 @@
 package steps;
 
-import org.openqa.selenium.OutputType;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 
@@ -12,11 +11,11 @@ import io.cucumber.java.en.When;
 public class WebSiteTitleCheckSteps extends DriverInstance{
 	String TitleName;
 	
-	@Given("Launching the browser")
-	public void launching_the_browser() {
-		System.setProperty("webdriver.chrome.driver", "C:\\WebDriver\\chrome Driver\\chromedriver-win32\\chromedriver.exe");
-		driver=new ChromeDriver();    
-	}
+//	@Given("Launching the browser")
+//	public void launching_the_browser() {
+//		System.setProperty("webdriver.chrome.driver", "C:\\WebDriver\\chrome Driver\\chromedriver-win32\\chromedriver.exe");
+//		driver=new ChromeDriver();    
+//	}
 
 	@Given("Navigate to the Google website")
 	public void navigate_to_the_google_website() {
@@ -53,13 +52,6 @@ public class WebSiteTitleCheckSteps extends DriverInstance{
 	@Then("Matching the Bing Title and Get the result")
 	public void matching_the_bing_title_and_get_the_result() {
 		Assert.assertEquals(TitleName.equals("Search - Microsoft Bing Fail"), true);
-//		if(TitleName.equals("Search - Microsoft Bing Fail"))
-//		{
-//			System.out.println("Yes, Google title is matched and the title is "+"\'"+TitleName+"\'");
-//		}
-//		else
-//		{
-//			System.out.println("No, Google title is not matched and the title is "+"\'"+TitleName+"\'");
-//		}
+
 	}
 }
