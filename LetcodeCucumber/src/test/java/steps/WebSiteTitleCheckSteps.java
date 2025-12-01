@@ -2,7 +2,7 @@ package steps;
 
 import org.testng.Assert;
 
-import driver.DriverInstance;
+import base.DriverInstance;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
