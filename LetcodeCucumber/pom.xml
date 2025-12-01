@@ -3,9 +3,9 @@
   <groupId>Letcode</groupId>
   <artifactId>LetcodeCucumber</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <dependencies>
   
-  <!-- Selenium WebDriver -->
+   <dependencies>
+   <!-- Selenium WebDriver -->
 <dependency>
     <groupId>org.seleniumhq.selenium</groupId>
     <artifactId>selenium-java</artifactId>
@@ -23,6 +23,20 @@
     <artifactId>cucumber-testng</artifactId>
     <version>7.23.0</version>
     <scope>test</scope>
+</dependency>
+
+<!-- Extent Report Adapter for Cucumber 7.x -->
+<dependency>
+    <groupId>tech.grasshopper</groupId>
+    <artifactId>extentreports-cucumber7-adapter</artifactId>
+    <version>1.14.0</version>
+</dependency>
+
+<!-- Extent Reports Core -->
+<dependency>
+    <groupId>com.aventstack</groupId>
+    <artifactId>extentreports</artifactId>
+    <version>5.0.9</version>
 </dependency>
   </dependencies>
 </project>

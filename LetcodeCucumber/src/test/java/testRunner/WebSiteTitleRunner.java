@@ -9,7 +9,8 @@ import io.cucumber.testng.CucumberOptions.SnippetType;
 		,dryRun = false
 		,glue = {"steps","webSiteHooks"}
 		,snippets = SnippetType.CAMELCASE
-		,plugin = {"pretty","html:report/Screenshot/WebTitleFailed.html","json:report/Screenshot/WebTitleFailed.json","junit:report/Screenshot/WebTitleFailed.xml"}
+		,plugin = {"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"} 
+//		,plugin = {"pretty","html:report/Screenshot/WebTitleFailed.html","json:report/Screenshot/WebTitleFailed.json","junit:report/Screenshot/WebTitleFailed.xml"}
 //		,tags = "@Sanity"
 		,tags = "@E2E"
 //		,tags = "@Sanity and @Reg"

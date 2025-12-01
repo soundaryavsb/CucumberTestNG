@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="4.454" tests="2" skipped="0" failures="1" errors="0" timestamp="2025-11-29T07:58:36.971346700Z">
-<testcase classname="Matching the website Title" name="Google Title Check" time="2.287">
+<testsuite name="Cucumber" time="4.569" tests="2" skipped="0" failures="1" errors="0" timestamp="2025-11-30T07:12:07.463931200Z">
+<testcase classname="Matching the website Title" name="Google Title Check" time="1.822">
 <system-out><![CDATA[
 Given Navigate to the Google website........................................passed
 When Get the Google browser Title...........................................passed
 Then Matching the Google Title and Get the result...........................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Matching the website Title" name="Bing Title Check" time="1.895">
+<testcase classname="Matching the website Title" name="Bing Title Check" time="2.566">
 <failure type="java.lang.AssertionError" message="expected [true] but found [false]">
 <![CDATA[java.lang.AssertionError: expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:111)

@@ -7,7 +7,7 @@ Feature: Matching the website Title
     When Get the Google browser Title
     Then Matching the Google Title and Get the result
     
-@Reg
+@Reg @CleanUp
   Scenario: Bing Title Check
     Given Navigate to the Bing website
     When Get the Bing browser Title
