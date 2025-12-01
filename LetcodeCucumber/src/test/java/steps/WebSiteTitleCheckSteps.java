@@ -1,6 +1,5 @@
 package steps;
 
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 
 import driver.DriverInstance;

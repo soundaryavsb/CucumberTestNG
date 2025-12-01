@@ -1,7 +1,5 @@
 package steps;
 
-import java.util.stream.IntStream;
-
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -19,7 +17,7 @@ public class AddToCartFunctions {
 	}
 	@Given("User search a {string}")
 	public void userSearchA(String string) {
-	    IntStream chars = string.chars();
+	   
 	   
 	}
 	@When("User add a book to cart")
