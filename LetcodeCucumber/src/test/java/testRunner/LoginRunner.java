@@ -7,8 +7,8 @@ import io.cucumber.testng.CucumberOptions.SnippetType;
 
 @CucumberOptions(
 		features = {"src/test/java/Feature/login.feature"},
-		dryRun = true,
-		glue = "steps",
+		dryRun = false,
+		glue = "pages",
 		snippets = SnippetType.CAMELCASE,
 		monochrome = true
 		)

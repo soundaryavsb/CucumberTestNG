@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="0.151" tests="3" skipped="0" failures="0" errors="0" timestamp="2025-11-27T16:40:06.525131200Z">
-<testcase classname="Book Cart Application Demo to add a Book" name="Add a product to a cart - #1.1" time="0.004">
+<testsuite name="Cucumber" time="0.108" tests="3" skipped="0" failures="0" errors="0" timestamp="2025-12-02T02:37:33.134842100Z">
+<testcase classname="Book Cart Application Demo to add a Book" name="Add a product to a cart - #1.1" time="0.007">
 <system-out><![CDATA[
 Given User should navigate to the application for add a book to the cart....passed
 And User should enter the "ortoni" and "pass1234"...........................passed
@@ -9,7 +9,7 @@ When User add a book to cart................................................pass
 Then the cart badge should be updated.......................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Book Cart Application Demo to add a Book" name="Add a product to a cart - #1.2" time="0">
+<testcase classname="Book Cart Application Demo to add a Book" name="Add a product to a cart - #1.2" time="0.002">
 <system-out><![CDATA[
 Given User should navigate to the application for add a book to the cart....passed
 And User should enter the "testuser" and "Test@123".........................passed
@@ -18,7 +18,7 @@ When User add a book to cart................................................pass
 Then the cart badge should be updated.......................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Book Cart Application Demo to add a Book" name="Add a product to a cart - #2.1" time="0">
+<testcase classname="Book Cart Application Demo to add a Book" name="Add a product to a cart - #2.1" time="0.002">
 <system-out><![CDATA[
 Given User should navigate to the application for add a book to the cart....passed
 And User should enter the "ortoni" and "pass1234"...........................passed

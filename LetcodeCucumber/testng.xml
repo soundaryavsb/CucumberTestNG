@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Suite">
+  <test name="Test" thread-count="5" parallel="classes">
+  <classes>
+  <class name="testRunner.AddToCartRunner"></class>
+   <class name="testRunner.BackgroundLoginRunner"></class>
+    <class name="testRunner.LoginRunner"></class>
+     <class name="testRunner.WebSiteTitleRunner"></class>
+  </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

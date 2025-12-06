@@ -2,21 +2,27 @@ package webSiteHooks;
 
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-import base.DriverInstance;
+import base.PageContext;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
 
-public class Hooks extends DriverInstance{
-
+public class Hooks{
+	private PageContext context;
+	public Hooks(PageContext context) {
+		this.context=context;
+	}
+	
 	@Before
 	public void BrowserLaunch(Scenario scenario)
 	{
-		System.setProperty("webdriver.chrome.driver", "C:\\WebDriver\\chrome Driver\\chromedriver-win32\\chromedriver.exe");
-		driver=new ChromeDriver();  
-		driver.manage().window().maximize();
+		System.setProperty("webcontext.getDriver().chrome.driver", "C:\\WebDriver\\chrome Driver\\chromedriver-win32\\chromecontext.getDriver().exe");
+		WebDriver driver=new ChromeDriver();  
+		context.setDriver(driver);
+		context.getDriver().manage().window().maximize();
 		//Returns unique ID
 		System.out.println("==Scenario Before getId: "+scenario.getId());
 		//Get the feature file location
@@ -36,7 +42,7 @@ public class Hooks extends DriverInstance{
 	@After(value="@CleanUp", order=0)
 	public void DataCleanUp(Scenario scenario)
 	{
-		
+
 		scenario.log("This is clean up in @After");
 	}
 
@@ -54,10 +60,10 @@ public class Hooks extends DriverInstance{
 		boolean scenarioStatus=scenario.isFailed();
 		if(scenarioStatus)
 		{
-			byte[] screenshot=((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
+			byte[] screenshot=((TakesScreenshot) context.getDriver()).getScreenshotAs(OutputType.BYTES);
 			scenario.attach(screenshot, "image/png", "Web browser title not matched screenshot");
 		}
-		driver.quit();
+		context.getDriver().quit();
 	}
 
 }

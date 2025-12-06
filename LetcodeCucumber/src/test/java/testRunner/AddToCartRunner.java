@@ -5,8 +5,8 @@ import io.cucumber.testng.CucumberOptions.SnippetType;
 
 @CucumberOptions(
 		features = {"src/test/java/Feature/AddToCart.feature"},
-		dryRun = true,
-		glue = "steps"
+		dryRun = false,
+		glue = "pages"
 		,snippets = SnippetType.CAMELCASE
 		,plugin = {"pretty","html:report/AddToCart/Addresult.html","json:report/AddToCart/Addresult.json","junit:report/AddToCart/Addresult.xml"}
 		)

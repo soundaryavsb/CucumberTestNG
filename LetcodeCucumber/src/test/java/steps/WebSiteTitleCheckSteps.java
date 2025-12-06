@@ -2,28 +2,26 @@ package steps;
 
 import org.testng.Assert;
 
-import base.DriverInstance;
+import base.PageContext;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
-public class WebSiteTitleCheckSteps extends DriverInstance{
+public class WebSiteTitleCheckSteps{
+	private PageContext context;
+	public WebSiteTitleCheckSteps(PageContext context) {
+		this.context=context;
+	}
 	String TitleName;
 	
-//	@Given("Launching the browser")
-//	public void launching_the_browser() {
-//		System.setProperty("webdriver.chrome.driver", "C:\\WebDriver\\chrome Driver\\chromedriver-win32\\chromedriver.exe");
-//		driver=new ChromeDriver();    
-//	}
-
 	@Given("Navigate to the Google website")
 	public void navigate_to_the_google_website() {
-		driver.get("https://www.google.com/");
+		context.getDriver().get("https://www.google.com/");
 	}
 
 	@When("Get the Google browser Title")
 	public void get_the_google_browser_title() {
-		TitleName=driver.getTitle();
+		TitleName=context.getDriver().getTitle();
 	}
 
 	@Then("Matching the Google Title and Get the result")
@@ -41,12 +39,12 @@ public class WebSiteTitleCheckSteps extends DriverInstance{
 
 	@Given("Navigate to the Bing website")
 	public void navigate_to_the_bing_website() {
-		driver.get("https://www.bing.com");
+		context.getDriver().get("https://www.bing.com");
 	}
 
 	@When("Get the Bing browser Title")
 	public void get_the_bing_browser_title() {
-		TitleName=driver.getTitle();
+		TitleName=context.getDriver().getTitle();
 	}
 	@Then("Matching the Bing Title and Get the result")
 	public void matching_the_bing_title_and_get_the_result() {
